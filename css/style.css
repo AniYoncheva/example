@@ -1,0 +1,49 @@
+﻿body {
+    font-family: Arial;
+}
+
+#container-link div,
+#container-text div{
+    margin:10px;
+    display: inline-block;
+}
+
+.btn-group-wrap {
+    text-align: center;
+    margin-top:30px;
+    margin-bottom:15px;
+}
+
+.btn-success{
+    opacity: 0;
+    animation: new-item-animation .5s linear forwards;
+}
+ 
+@keyframes new-item-animation {
+    from {
+        opacity: 0;
+        transform: translateY(-400px);
+}
+ 
+    to {
+        opacity: 1;
+        transform : translateY(0);
+    }
+}
+
+.btn-info{
+    opacity: 0;
+    animation: item-animation .5s linear forwards;
+}
+ 
+@keyframes item-animation {
+    from {
+        opacity: 0;
+        transform: translateX(-400px);
+}
+ 
+    to {
+        opacity: 1;
+        transform : translateY(0);
+    }
+}
